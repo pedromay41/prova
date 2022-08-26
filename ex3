@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class ex3 {
+    public static void main(String[] args) {
+    Scanner sc = new Scanner(System.in);
+    int tempo = 0;
+    int h = (tempo / 3600);
+    int m = (tempo % 3600) / 60;
+    int s = (tempo % 3600) %60;
+        System.out.println("Informe a massa do material em g: ");
+        float massainicial =sc.nextFloat();
+        float massafinal = massainicial;
+        while (massafinal >= 0.5){
+            massafinal /= 2;
+            tempo += 50;
+            System.out.println();
+            System.out.println("massa inicial: "+ massainicial);
+            System.out.println("massa final: "+ massafinal);
+            System.out.println( h + "horas: " +  m + " minutos: " + s + "segundos: ");
+        }
+}
+    
+}
